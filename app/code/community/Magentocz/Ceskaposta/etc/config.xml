@@ -16,6 +16,13 @@
  * @copyright Copyright (c) 2014 Magento CZ (http://www.magento.cz)
  * 
  */ 
+/** 
+ * Česká pošta
+ * 
+ * @category Magentocz 
+ * @package Magentocz_Ceskaposta
+ * @author Jaromír Müller, https://twitter.com/jaromirmuller
+ */
 -->
 <config>
     <modules>

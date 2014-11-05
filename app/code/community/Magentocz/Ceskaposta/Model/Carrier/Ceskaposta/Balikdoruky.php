@@ -15,7 +15,13 @@
 * @copyright Copyright (c) 2014 Magento CZ (http://www.magento.cz)
 * 
 */ 
-
+/** 
+ * Balík do ruky od České pošty
+ * 
+ * @category Magentocz 
+ * @package Magentocz_Ceskaposta
+ * @author Jaromír Müller, https://twitter.com/jaromirmuller
+ */
 class Magentocz_Ceskaposta_Model_Carrier_Ceskaposta_Balikdoruky
     extends Mage_Shipping_Model_Carrier_Abstract
     implements Mage_Shipping_Model_Carrier_Interface
@@ -24,7 +30,6 @@ class Magentocz_Ceskaposta_Model_Carrier_Ceskaposta_Balikdoruky
     protected $_code = 'magentocz_ceskaposta_balikdoruky';
 
     /**
-     * Enter description here...
      *
      * @param Mage_Shipping_Model_Rate_Request $data
      * @return Mage_Shipping_Model_Rate_Result
