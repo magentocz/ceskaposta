@@ -65,7 +65,7 @@
     <default>
         <carriers>
  
-            <magentocz_ceskaposta_balikdoruky>
+            <magentoczceskapostabalikdoruky>
                 <active>0</active>
                 <sallowspecific>0</sallowspecific>
                 <model>magentocz_ceskaposta/carrier_ceskaposta_balikdoruky</model>
@@ -75,9 +75,9 @@
                 <type>I</type>
                 <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
                 <handling_type>F</handling_type>
-            </magentocz_ceskaposta_balikdoruky>
+            </magentoczceskapostabalikdoruky>
 
-            <magentocz_ceskaposta_baliknapostu>
+            <magentoczceskapostabaliknapostu>
                 <active>0</active>
                 <sallowspecific>0</sallowspecific>
                 <model>magentocz_ceskaposta/carrier_ceskaposta_baliknapostu</model>
@@ -87,7 +87,7 @@
                 <type>I</type>
                 <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
                 <handling_type>F</handling_type>
-            </magentocz_ceskaposta_baliknapostu>
+            </magentoczceskapostabaliknapostu>
 
         </carriers>
     </default>

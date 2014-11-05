@@ -27,7 +27,7 @@ class Magentocz_Ceskaposta_Model_Carrier_Ceskaposta_Baliknapostu
     implements Mage_Shipping_Model_Carrier_Interface
 {
 
-    protected $_code = 'magentocz_ceskaposta_baliknapostu';
+    protected $_code = 'magentoczceskapostabaliknapostu';
 
     /**
      *
@@ -62,10 +62,10 @@ class Magentocz_Ceskaposta_Model_Carrier_Ceskaposta_Baliknapostu
         if ($shippingPrice !== false) {
             $method = Mage::getModel('shipping/rate_result_method');
 
-            $method->setCarrier('magentocz_ceskaposta_baliknapostu');
+            $method->setCarrier('magentoczceskapostabaliknapostu');
             $method->setCarrierTitle($this->getConfigData('title'));
 
-            $method->setMethod('magentocz_ceskaposta_baliknapostu');
+            $method->setMethod('magentoczceskapostabaliknapostu');
             $method->setMethodTitle($this->getConfigData('name'));
 
             if ($request->getFreeShipping() === true) {
@@ -84,7 +84,7 @@ class Magentocz_Ceskaposta_Model_Carrier_Ceskaposta_Baliknapostu
 
     public function getAllowedMethods()
     {
-        return array('magentocz_ceskaposta_baliknapostu'=>$this->getConfigData('name'));
+        return array('magentoczceskapostabaliknapostu'=>$this->getConfigData('name'));
     }
 
 }

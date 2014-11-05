@@ -28,7 +28,7 @@
     <sections>
         <carriers>
             <groups>
-                <magentocz_ceskaposta_balikdoruky translate="label" module="shipping">
+                <magentoczceskapostabalikdoruky translate="label" module="shipping">
                     <label>Magento.CZ - Česká Pošta, Balík do ruky</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>2</sort_order>
@@ -148,9 +148,9 @@
                             <show_in_store>1</show_in_store>
                         </specificerrmsg>
                     </fields>
-                </magentocz_ceskaposta_balikdoruky>
+                </magentoczceskapostabalikdoruky>
 
-                <magentocz_ceskaposta_baliknapostu translate="label" module="shipping">
+                <magentoczceskapostabaliknapostu translate="label" module="shipping">
                     <label>Magento.CZ - Česká Pošta, Balík na poštu</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>3</sort_order>
@@ -270,7 +270,7 @@
                             <show_in_store>1</show_in_store>
                         </specificerrmsg>
                     </fields>
-                </magentocz_ceskaposta_baliknapostu>
+                </magentoczceskapostabaliknapostu>
             </groups>
         </carriers>
     </sections>

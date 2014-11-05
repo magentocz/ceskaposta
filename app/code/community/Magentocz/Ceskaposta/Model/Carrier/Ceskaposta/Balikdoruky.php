@@ -27,7 +27,7 @@ class Magentocz_Ceskaposta_Model_Carrier_Ceskaposta_Balikdoruky
     implements Mage_Shipping_Model_Carrier_Interface
 {
 
-    protected $_code = 'magentocz_ceskaposta_balikdoruky';
+    protected $_code = 'magentoczceskapostabalikdoruky';
 
     /**
      *
@@ -62,10 +62,10 @@ class Magentocz_Ceskaposta_Model_Carrier_Ceskaposta_Balikdoruky
         if ($shippingPrice !== false) {
             $method = Mage::getModel('shipping/rate_result_method');
 
-            $method->setCarrier('magentocz_ceskaposta_balikdoruky');
+            $method->setCarrier('magentoczceskapostabalikdoruky');
             $method->setCarrierTitle($this->getConfigData('title'));
 
-            $method->setMethod('magentocz_ceskaposta_balikdoruky');
+            $method->setMethod('magentoczceskapostabalikdoruky');
             $method->setMethodTitle($this->getConfigData('name'));
 
             if ($request->getFreeShipping() === true) {
@@ -84,7 +84,7 @@ class Magentocz_Ceskaposta_Model_Carrier_Ceskaposta_Balikdoruky
 
     public function getAllowedMethods()
     {
-        return array('magentocz_ceskaposta_balikdoruky'=>$this->getConfigData('name'));
+        return array('magentoczceskapostabalikdoruky'=>$this->getConfigData('name'));
     }
 
 }
