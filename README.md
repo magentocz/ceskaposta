@@ -48,6 +48,6 @@ Veškeré dotazy a hlášení chyb směřujte na https://github.com/magentocz/ce
     */
 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-54971165-2/magentocz/osobniodber/README?pixel)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-54971165-2/magentocz/ceskaposta/README?pixel)](https://github.com/igrigorik/ga-beacon)
 
 
