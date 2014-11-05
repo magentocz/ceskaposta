@@ -65,7 +65,7 @@ class Magentocz_Ceskaposta_Model_Carrier_Ceskaposta_Baliknapostu
             $method->setCarrier('magentoczceskapostabaliknapostu');
             $method->setCarrierTitle($this->getConfigData('title'));
 
-            $method->setMethod('magentoczceskapostabaliknapostu');
+            $method->setMethod('standard');
             $method->setMethodTitle($this->getConfigData('name'));
 
             if ($request->getFreeShipping() === true) {
@@ -84,7 +84,7 @@ class Magentocz_Ceskaposta_Model_Carrier_Ceskaposta_Baliknapostu
 
     public function getAllowedMethods()
     {
-        return array('magentoczceskapostabaliknapostu'=>$this->getConfigData('name'));
+        return array( 'standard' =>$this->getConfigData('name'));
     }
 
 }

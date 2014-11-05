@@ -65,7 +65,7 @@ class Magentocz_Ceskaposta_Model_Carrier_Ceskaposta_Balikdoruky
             $method->setCarrier('magentoczceskapostabalikdoruky');
             $method->setCarrierTitle($this->getConfigData('title'));
 
-            $method->setMethod('magentoczceskapostabalikdoruky');
+            $method->setMethod('standard');
             $method->setMethodTitle($this->getConfigData('name'));
 
             if ($request->getFreeShipping() === true) {
@@ -84,7 +84,7 @@ class Magentocz_Ceskaposta_Model_Carrier_Ceskaposta_Balikdoruky
 
     public function getAllowedMethods()
     {
-        return array('magentoczceskapostabalikdoruky'=>$this->getConfigData('name'));
+        return array('standard' => $this->getConfigData('name'));
     }
 
 }
