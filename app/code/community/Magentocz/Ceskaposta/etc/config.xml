@@ -34,11 +34,63 @@
         <models>
             <magentocz_ceskaposta>
                 <class>Magentocz_Ceskaposta_Model</class>
+                <resourceModel>magentocz_ceskaposta_mysql4</resourceModel>
             </magentocz_ceskaposta>
+            <magentocz_ceskaposta_mysql4>
+                <class>Magentocz_Ceskaposta_Model_Mysql4</class>
+                <entities>
+                    <posta>
+                        <table>magentocz_ceskaposta_posta</table>
+                    </posta>
+                </entities>
+            </magentocz_ceskaposta_mysql4>
         </models>
+        <resources>
+            <magentocz_ceskaposta_setup>
+                <setup>
+                    <module>Magentocz_Ceskaposta</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </magentocz_ceskaposta_setup>
+            <magentocz_ceskaposta_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </magentocz_ceskaposta_write>
+            <magentocz_ceskaposta_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </magentocz_ceskaposta_read>
+        </resources>
+        <helpers>
+            <magentocz_ceskaposta>
+                <class>Magentocz_Ceskaposta_Helper</class>
+            </magentocz_ceskaposta>
+        </helpers>
+        <blocks>
+            <magentocz_ceskaposta>
+                <class>Magentocz_Ceskaposta_Block</class>
+            </magentocz_ceskaposta>
+        </blocks>
     </global>
     
+    <admin>
+        <routers>
+            <magentocz_ceskaposta>
+                <use>admin</use>
+                <args>
+                    <module>Magentocz_Ceskaposta</module>
+                    <frontName>ceskaposta</frontName>
+                </args>
+            </magentocz_ceskaposta>
+        </routers>
+    </admin>
+
     <adminhtml>
+
         <translate>
             <modules>
                 <Magentocz_Ceskaposta>
@@ -51,6 +103,7 @@
     </adminhtml>
     
     <frontend>
+        
         <translate>
             <modules>
                 <Magentocz_Ceskaposta>
